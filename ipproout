@@ -1,0 +1,129 @@
+case 0x0800:
+    ip_protocal = "internet Protocol version 4 (IPv4)";
+    break;
+case 0x0806:
+    ip_protocal = "Address Resolution Protocol (ARP)";
+    break;
+case 0x0842:
+    ip_protocal = "Wake-on-LAN[3]";
+    break;
+case 0x22F0:
+    ip_protocal = "Audio Video Transport Protocol as defined in IEEE Std 1722-2011";
+    break;
+case 0x22F3:
+    ip_protocal = "IETF TRILL Protocol";
+    break;
+case 0x6003:
+    ip_protocal = "DECnet Phase IV";
+    break;
+case 0x8035:
+    ip_protocal = "Reverse Address Resolution Protocol";
+    break;
+case 0x809B:
+    ip_protocal = "AppleTalk (Ethertalk)";
+    break;
+case 0x80F3:
+    ip_protocal = "AppleTalk Address Resolution Protocol (AARP)";
+    break;
+case 0x8100:
+    ip_protocal = "VLAN-tagged frame (IEEE 802.1Q) & Shortest Path Bridging IEEE 802.1aq[4]";
+    break;
+case 0x8137:
+    ip_protocal = "IPX";
+    break;
+case 0x8138:
+    ip_protocal = "IPX";
+    break;
+case 0x8204:
+    ip_protocal = "QNX Qnet";
+    break;
+case 0x86DD:
+    ip_protocal = "Internet Protocol Version 6 (IPv6)";
+    break;
+case 0x8808:
+    ip_protocal = "Ethernet flow control";
+    break;
+case 0x8809:
+    ip_protocal = "Slow Protocols (IEEE 802.3)";
+    break;
+case 0x8819:
+    ip_protocal = "CobraNet";
+    break;
+case 0x8847:
+    ip_protocal = "MPLS unicast";
+    break;
+case 0x8848:
+    ip_protocal = "MPLS multicast";
+    break;
+case 0x8863:
+    ip_protocal = "PPPoE Discovery Stage";
+    break;
+case 0x8864:
+    ip_protocal = "PPPoE Session Stage";
+    break;
+case 0x8870:
+    ip_protocal = "Jumbo Frames[2]";
+    break;
+case 0x887B:
+    ip_protocal = "HomePlug 1.0 MME";
+    break;
+case 0x888E:
+    ip_protocal = "EAP over LAN (IEEE 802.1X)";
+    break;
+case 0x8892:
+    ip_protocal = "PROFINET Protocol";
+    break;
+case 0x889A:
+    ip_protocal = "HyperSCSI (SCSI over Ethernet)";
+    break;
+case 0x88A2:
+    ip_protocal = "ATA over Ethernet";
+    break;
+case 0x88A4:
+    ip_protocal = "EtherCAT Protocol";
+    break;
+case 0x88A8:
+    ip_protocal = "Provider Bridging (IEEE 802.1ad) & Shortest Path Bridging IEEE 802.1aq[5]";
+    break;
+case 0x88AB:
+    ip_protocal = "Ethernet Powerlink[citation needed]";
+    break;
+case 0x88CC:
+    ip_protocal = "Link Layer Discovery Protocol (LLDP)";
+    break;
+case 0x88CD:
+    ip_protocal = "SERCOS III";
+    break;
+case 0x88E1:
+    ip_protocal = "HomePlug AV MME[citation needed]";
+    break;
+case 0x88E3:
+    ip_protocal = "Media Redundancy Protocol (IEC62439-2)";
+    break;
+case 0x88E5:
+    ip_protocal = "MAC security (IEEE 802.1AE)";
+    break;
+case 0x88F7:
+    ip_protocal = "Precision Time Protocol (PTP) over Ethernet (IEEE 1588)";
+    break;
+case 0x8902:
+    ip_protocal = "IEEE 802.1ag Connectivity Fault Management (CFM) Protocol / ITU-T Recommendation Y.1731 (OAM)";
+    break;
+case 0x8906:
+    ip_protocal = "Fibre Channel over Ethernet (FCoE)";
+    break;
+case 0x8914:
+    ip_protocal = "FCoE Initialization Protocol";
+    break;
+case 0x8915:
+    ip_protocal = "RDMA over Converged Ethernet (RoCE)";
+    break;
+case 0x892F:
+    ip_protocal = "High-availability Seamless Redundancy (HSR)";
+    break;
+case 0x9000:
+    ip_protocal = "Ethernet Configuration Testing Protocol[6]";
+    break;
+case 0xCAFE:
+    ip_protocal = "Veritas Low Latency Transport (LLT)[7] for Veritas Cluster Server";
+    break;
