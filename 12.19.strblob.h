@@ -4,7 +4,6 @@
 #include <initializer_list>
 #include <memory>
 #include <string>
-#include "12.19.strblobptr.h"
 using std::vector;
 using std::make_shared;
 using std::initializer_list;
@@ -26,36 +25,10 @@ public:
     const string& back() const;
     string& front();
     string& back();
-    StrBlobPtr begin(){return StrBlobPtr(*this);}
-    StrBlobPtr end(){
-         auto ret = StrBlobPtr(*this, data->size());
-         return ret;
-    }
+    StrBlobPtr begin();
+    StrBlobPtr end();
 private:
     shared_ptr<vector<string>> data;
     void check(size_type i, const string &msg) const;
 };
-StrBlob::StrBlob(): data(make_shared<vector<string>>()){}
-StrBlob::StrBlob(initializer_list<string> il): data(make_shared<vector<string>>(il)){}
-void StrBlob::check(size_type i, const string &msg) const {
-    if(i > data->size()){
-        throw out_of_range(msg);
-    }
-}
-string &StrBlob::front(){
-     check(0, "front on empty StrBlob");
-     return data->back();
-}
-string &StrBlob::back(){
-     check(0, "back on empty StrBlob");
-     return data->back();
-}
-const string &StrBlob::front() const {
-     check(0, "front on empty StrBlob");
-     return data->back();
-}
-void StrBlob::pop_back(){
-     check(0, "pop_back on empty StrBlob");
-     return data->pop_back();
-}
 #endif
