@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class HasPtr {
+    friend void print(ostream& os, HasPtr &rhs);
+public:
+    HasPtr(const string &s = string()):
+        ps(new string(s)), i(0){}
+    HasPtr(const HasPtr &rhs){
+        ps = new string(*rhs.ps);
+        i = rhs.i;
+    }
+private:
+    string *ps;
+    int i;
+};
+void print(ostream &os, HasPtr &rhs){
+     os << *rhs.ps << " i: " << rhs.i << endl;
+}
+int main(){
+    HasPtr p1("111");
+    HasPtr p2 = p1;
+    print(cout, p2);
+    return 0;
+}
