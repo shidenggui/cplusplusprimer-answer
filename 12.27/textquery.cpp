@@ -22,7 +22,7 @@ TextQuery::query(const std::string &sought) const {
     static std::shared_ptr<std::set<line_no>> nodata(new std::set<line_no>);
 
     auto loc = wm.find(sought);
-    if(loc != wm.end()){
+    if(loc == wm.end()){
          return QueryResult(sought, nodata, file);
     }else{
         return QueryResult(sought, loc->second, file);
